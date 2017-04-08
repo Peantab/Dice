@@ -1,0 +1,338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.*?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<GridPane alignment="center" hgap="10" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" minHeight="600.0" minWidth="800.0" style="-fx-background-image: url(oldWood.jpg);" vgap="10" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dice.Controller">
+   <children>
+      <StackPane maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" prefHeight="150.0" prefWidth="200.0" style="-fx-min-width: 100%;">
+         <children>
+            <VBox prefHeight="200.0" prefWidth="100.0">
+               <children>
+                  <ImageView fitHeight="55.0" fitWidth="55.0" onMouseClicked="#saveAndExit" pickOnBounds="true" preserveRatio="true" style="-fx-translate-x: 560; -fx-translate-y: -120;">
+                     <cursor>
+                        <Cursor fx:constant="HAND" />
+                     </cursor>
+                     <image>
+                        <Image url="saveAndExit.png" />
+                     </image>
+                  </ImageView>
+                  <Text fx:id="status" strokeType="OUTSIDE" strokeWidth="0.0" text="Dice">
+                     <font>
+                        <Font name="Ubuntu" size="24.0" />
+                     </font>
+                     <VBox.margin>
+                        <Insets bottom="20.0" right="20.0" top="20.0" />
+                     </VBox.margin>
+                     <effect>
+                        <Glow level="0.5" />
+                     </effect>
+                  </Text>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="arrow1" fitHeight="65.0" fitWidth="65.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="arrow.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="pl1s1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="pl1s2" fitHeight="80.0" fitWidth="80.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl1s3" fitHeight="80.0" fitWidth="80.0" layoutX="90.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl1s4" fitHeight="80.0" fitWidth="80.0" layoutX="170.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl1s5" fitHeight="80.0" fitWidth="80.0" layoutX="250.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="pl1d1" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#d11" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="70.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl1d2" fitHeight="70.0" fitWidth="70.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#d12" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl1d3" fitHeight="70.0" fitWidth="70.0" layoutX="68.0" layoutY="10.0" onMouseClicked="#d13" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl1d4" fitHeight="70.0" fitWidth="70.0" layoutX="126.0" layoutY="10.0" onMouseClicked="#d14" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl1d5" fitHeight="70.0" fitWidth="70.0" layoutX="184.0" layoutY="10.0" onMouseClicked="#d15" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#roll1" style="-fx-background-color: #00d2ff;" text="Roll" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="25.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+                  <StackPane prefHeight="150.0" prefWidth="200.0">
+                     <children>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="arrow2" fitHeight="65.0" fitWidth="65.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="arrow.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets top="10.0" />
+                                 </HBox.margin>
+                              </ImageView>
+                              <ImageView fx:id="pl2s1" fitHeight="80.0" fitWidth="80.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl2s2" fitHeight="80.0" fitWidth="80.0" layoutX="10.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl2s3" fitHeight="80.0" fitWidth="80.0" layoutX="90.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl2s4" fitHeight="80.0" fitWidth="80.0" layoutX="170.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                              <ImageView fx:id="pl2s5" fitHeight="80.0" fitWidth="80.0" layoutX="250.0" layoutY="10.0" pickOnBounds="true" preserveRatio="true" visible="false">
+                                 <image>
+                                    <Image url="select.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <ImageView fx:id="pl2d1" fitHeight="70.0" fitWidth="70.0" onMouseClicked="#d21" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="70.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl2d2" fitHeight="70.0" fitWidth="70.0" layoutX="10.0" layoutY="10.0" onMouseClicked="#d22" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl2d3" fitHeight="70.0" fitWidth="70.0" layoutX="68.0" layoutY="10.0" onMouseClicked="#d23" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl2d4" fitHeight="70.0" fitWidth="70.0" layoutX="126.0" layoutY="10.0" onMouseClicked="#d24" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <ImageView fx:id="pl2d5" fitHeight="70.0" fitWidth="70.0" layoutX="184.0" layoutY="10.0" onMouseClicked="#d25" pickOnBounds="true" preserveRatio="true" visible="true">
+                                 <image>
+                                    <Image url="blank.png" />
+                                 </image>
+                                 <HBox.margin>
+                                    <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </ImageView>
+                              <Button minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onMouseClicked="#roll2" style="-fx-background-color: #ffae3a;" text="Roll" textAlignment="CENTER">
+                                 <HBox.margin>
+                                    <Insets left="30.0" top="25.0" />
+                                 </HBox.margin>
+                                 <cursor>
+                                    <Cursor fx:constant="HAND" />
+                                 </cursor>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </StackPane>
+               </children>
+            </VBox>
+            <Pane fx:id="resultBar" maxHeight="-Infinity" maxWidth="1.7976931348623157E308" minWidth="0.0" opacity="0.98" prefHeight="160.0" style="-fx-background-color: a93903; -fx-min-width: 800;" StackPane.alignment="CENTER">
+               <children>
+                  <VBox alignment="TOP_CENTER" prefHeight="0.0" prefWidth="100.0" style="-fx-min-width: 800;">
+                     <children>
+                        <TextFlow prefHeight="92.0" prefWidth="800.0" textAlignment="CENTER">
+                           <children>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text="RESULTS" textAlignment="CENTER">
+                                 <font>
+                                    <Font name="Khmer OS System" size="26.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="player1Name" fill="#0015ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=" VS ">
+                                 <font>
+                                    <Font size="10.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="player2Name" fill="#ff9500" strokeType="OUTSIDE" strokeWidth="0.0" text="Text" textAlignment="RIGHT">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="player1Score" fill="#0015ff" strokeType="OUTSIDE" strokeWidth="0.0" text="0" textAlignment="RIGHT">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Text>
+                              <Text fill="WHITE" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="player2Score" fill="#ff9500" strokeType="OUTSIDE" strokeWidth="0.0" text="0">
+                                 <font>
+                                    <Font size="37.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <TextFlow prefHeight="200.0" prefWidth="200.0" textAlignment="CENTER">
+                           <children>
+                              <Text fx:id="player1Description" fill="#0015ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text strokeType="OUTSIDE" strokeWidth="0.0" text="   ">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                              <Text fx:id="player2Description" fill="#ff9500" strokeType="OUTSIDE" strokeWidth="0.0" text="Text">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Text>
+                           </children>
+                        </TextFlow>
+                        <Button fx:id="hideResults" alignment="CENTER" contentDisplay="CENTER" defaultButton="true" mnemonicParsing="false" onMouseClicked="#closeResults" style="-fx-alignment: center;" text="Button" textAlignment="CENTER" />
+                     </children>
+                  </VBox>
+               </children>
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin>
+            </Pane>
+            <Button fx:id="temporaryHide" alignment="CENTER" contentDisplay="RIGHT" mnemonicParsing="false" onMouseEntered="#hideResults" onMouseExited="#showResults" prefHeight="20.0" prefWidth="60.0" style="-fx-background-color: #4d1a01; -fx-translate-x: 370; -fx-translate-y: -68;" text="Hide" textFill="WHITE" />
+         </children>
+      </StackPane>
+   </children>
+</GridPane>

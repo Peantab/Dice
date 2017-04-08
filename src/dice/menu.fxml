@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" style="-fx-background-image: url(oldWood.jpg);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="dice.Menu">
+   <children>
+      <VBox alignment="TOP_CENTER" prefHeight="200.0" prefWidth="100.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Text fx:id="title" strokeType="OUTSIDE" strokeWidth="0.0" text="Dice">
+                <font>
+                    <Font name="Ubuntu" size="48.0" />
+                </font>
+               <VBox.margin>
+                  <Insets bottom="5.0" left="20.0" right="20.0" top="20.0" />
+               </VBox.margin>
+                <effect>
+                    <Glow level="0.5" />
+                </effect>
+            </Text>
+            <Text layoutX="271.0" layoutY="66.0" strokeType="OUTSIDE" strokeWidth="0.0" text="by Paweł Taborowski">
+               <effect>
+                  <Glow level="0.5" />
+               </effect>
+               <font>
+                  <Font name="Ubuntu" size="13.0" />
+               </font>
+            </Text>
+            <Button fx:id="loadButton" layoutX="310.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#loadGame" opacity="0.3" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Continue" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="15.0" />
+               </VBox.margin>
+            </Button>
+            <Button mnemonicParsing="false" onMouseClicked="#pokerALaWitcher" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Poker à la Witcher" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="310.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#pokerModified" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Poker à la Witcher modified" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button layoutX="310.0" layoutY="209.0" mnemonicParsing="false" onMouseClicked="#five" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Cubilete" textFill="WHITE">
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </Button>
+            <Button layoutX="310.0" layoutY="124.0" mnemonicParsing="false" onMouseClicked="#showManual" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Manual" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="50.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <HBox alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-image: url(walnut.png);">
+               <children>
+                  <Text fill="#0015ff" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 1's name:">
+                     <effect>
+                        <DropShadow color="WHITE" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font></Text>
+                  <TextField fx:id="player1Name" onKeyReleased="#applyName" style="-fx-background-color: #00d2ff;" text="">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <VBox.margin>
+                  <Insets top="20.0" />
+               </VBox.margin>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+            </HBox>
+            <HBox alignment="CENTER" layoutX="185.0" layoutY="169.0" maxHeight="-Infinity" maxWidth="-Infinity" prefWidth="250.0" style="-fx-background-image: url(walnut.png);">
+               <children>
+                  <Text fill="#ff9500" strokeType="OUTSIDE" strokeWidth="0.0" text="Player 2's name:">
+                     <effect>
+                        <DropShadow color="WHITE" />
+                     </effect>
+                     <font>
+                        <Font name="System Bold" size="13.0" />
+                     </font>
+                  </Text>
+                  <TextField fx:id="player2Name" onKeyReleased="#applyName" style="-fx-background-color: #ffae3a;" text="">
+                     <HBox.margin>
+                        <Insets left="5.0" />
+                     </HBox.margin>
+                     <cursor>
+                        <Cursor fx:constant="TEXT" />
+                     </cursor>
+                  </TextField>
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets top="10.0" />
+               </VBox.margin>
+            </HBox>
+            <Button layoutX="310.0" layoutY="254.0" mnemonicParsing="false" onMouseClicked="#exit" prefHeight="35.0" prefWidth="200.0" style="-fx-background-color: #5f3300;" text="Quit" textFill="WHITE">
+               <VBox.margin>
+                  <Insets top="60.0" />
+               </VBox.margin>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
